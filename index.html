@@ -2,31 +2,93 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="Styles\style.css">
+    <script src="Script/script.js"></script>
+
     <title>Conestoga Cafe</title>
 </head>
 <body>
-    <header>
+    <header >
         <h1>Conestoga cafe<br> always fresh </h1>
     </header>
     <main>
-        <section class = "menu">
-            <div class="content_img">
-                <img src='Images/Chess Pie.jpg' width='100%' height='100%'>
-                <div>Calories: 150</br>Fat: 5%</div>
+        <div class = "container">
+            <div class = "menu">
+                <div class="content_img">
+                    <img src='Images/Chess Pie.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Chess Pie</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Chocolate Chip Bread.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Chocolate Chip Bread</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Chocolate Potato Cake.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Chocolate Potato Cake</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Coffee Cake.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Coffee Cake</h3>
+                </div>
+
+                <div class="content_img">
+                    <img src='Images/Ginger Bread Cake.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Ginger Bread Cake</h3>
+                </div>
+                <br>
+                <div class="content_img">
+                    <img src='Images/Pecan Rum Bars.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Pecan Rum Bars</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Skillet Herb Bread.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Skillet Herb Bread</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Spice Cookies.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Spice Cookies</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Wild Rice Bread.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Wild Rice Bread</h3>
+                </div>
+                <div class="content_img">
+                    <img src='Images/Yeast Rolls.jpg' width='100%' height='100%'>
+                    <div>Calories: 150</br>Fat: 5%</div>
+                    <br>
+                    <h3>Yeast Rolls</h3>
+                </div>
+        </div>
+        <button class = "orderBtn" type="button" onclick = "order()" >Place Order</button>
+
+        <!-- The Modal -->
+        <div id="orderBox" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick = "closeMsg()">&times;</span>
+                <h2>Order Successful</h2>
+                <button type="button" onclick = "closeMsg()" >OK</button>
             </div>
-            <div class="content_img">
-                <img src='Images/Chess Pie.jpg' width='100%' height='100%'>
-                <div>Calories: 150</br>Fat: 5%</div>
-            </div>
-            <div class="content_img">
-                <img src='Images/Chess Pie.jpg' width='100%' height='100%'>
-                <div>Calories: 150</br>Fat: 5%</div>
-            </div>
-            <div class="content_img">
-                <img src='Images/Chess Pie.jpg' width='100%' height='100%'>
-                <div>Calories: 150</br>Fat: 5%</div>
-            </div>
-        </section>
+        </div>
+    </div>
     </main>
 
   
